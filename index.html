@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajex Web - Portfolio of a passionate web developer creating innovative, client-focused websites.">
+    <meta name="keywords" content="web developer, portfolio, Ajex Web, web development, freelance, websites">
+    <title>Ajex Web - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-gray: #f4f4f4;
+            --dark-gray: #333;
+            --black: #1a1a1a;
+            --red: #e63946;
+            --white: #fff;
+        }
+
+        html, body, div, span, h1, h2, p, a, form, input, textarea, button, nav, header, section, footer {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--primary-gray);
+        }
+
+        header {
+            background: var(--black);
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: var(--dark-gray);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .nav-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--red);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--white);
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--black);
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0.5rem 0;
+            color: var(--red);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-form label {
+            font-size: 1rem;
+            color: var(--black);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid var(--dark-gray);
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            padding: 0.8rem;
+            background: var(--red);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #b32d38;
+        }
+
+        .projects a {
+            display: block;
+            margin: 0.5rem 0;
+            color: var(--red);
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            nav .nav-links {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            nav .nav-links.active {
+                display: flex;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ajex Web</h1>
+        <p>Web Developer & Creator</p>
+    </header>
+
+    <nav>
+        <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#webdev">About Web Development</a>
+            <a href="#social">Social</a>
+            <a href="#contact">Contact</a>
+            <a href="#projects">Past Projects</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a passionate web developer dedicated to crafting innovative, user-friendly websites tailored to my clients' needs. Explore my work and let's collaborate on your next project!</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Ajay, the creator behind Ajex Web. With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, I specialize in building responsive, high-performance websites. My mission is to deliver exceptional digital experiences with a focus on creativity, functionality, and client satisfaction.</p>
+        </section>
+
+        <section id="webdev">
+            <h2>About Web Development</h2>
+            <p>Web development is the art and science of creating websites that are both visually appealing and highly functional. From front-end design to back-end logic, I use cutting-edge technologies to build websites that engage users and drive results. Whether you need a personal portfolio, an e-commerce platform, or a business landing page, I'm here to bring your vision to life.</p>
+        </section>
+
+        <section id="social" class="social-links">
+            <h2>Connect With Me</h2>
+            <p><a href="https://www.instagram.com/ajexweb" target="_blank" rel="noopener">Instagram: @ajexweb</a></p>
+            <p><a href="mailto:ajexweb@gmail.com">Gmail: ajexweb@gmail.com</a></p>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xdkeqakq" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="mobile">Your Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Past Projects</h2>
+            <!-- Replace with real project links when available -->
+            <!-- <p><a href="https://example-project1.com" target="_blank" rel="noopener">Project 1 - E-commerce Website</a></p> -->
+            <!-- <p><a href="https://example-project2.com" target="_blank" rel="noopener">Project 2 - Portfolio Website</a></p> -->
+            <!-- <p><a href="https://example-project3.com" target="_blank" rel="noopener">Project 3 - Business Landing Page</a></p> -->
+            <p>Exciting projects are in the works! Contact me to learn more about my portfolio.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© <span id="year"></span> Ajex Web. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Toggle hamburger menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+    </script>
+</body>
+</html>
